@@ -26,6 +26,6 @@ Diagnostics > command Prompt
 executar o comando abaixo
 
 
-fetch -q -o - https://raw.githubusercontent.com/lndgoncalves/zabbix-pfsense-gateway/master/auto-config.sh | sh
+fetch -q -o - https://raw.githubusercontent.com/victorfmaraujo/zabbix/master/Templates/Pfsense/Openvpn/Client/auto-config.sh | sh
 
 
