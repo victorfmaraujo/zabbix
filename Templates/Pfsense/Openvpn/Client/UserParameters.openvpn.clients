@@ -1,0 +1,3 @@
+UserParameter=openvpn.clients.discovery,sudo php /scripts/openvpn.clients.discovery.php
+UserParameter=openvpn.clients.data[*],sudo php /scripts/openvpn.clients.data.php $1 $2
+UnsafeUserParameters=1
