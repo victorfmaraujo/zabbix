@@ -6,9 +6,6 @@
   # $b ID do JOB
   # $c ID do Storage
 )
-if ($b -eq $null) {
-    $b = "nothing"
-    }
 
 function get-CBBackupStatusDataJob {
 set-location "C:\Program Files\CloudBerryLab\CloudBerry Backup"
@@ -19,7 +16,10 @@ set-location "C:\Program Files\CloudBerryLab\CloudBerry Backup"
     $JobIds=$data -match ('^ID:') -replace ('^ID: ','')  
     $JobResult=$data -match ('^Last Result:') -replace ('^Last Result: ','')
     #Transforma a string do resultado em Decimal
-    $JobResult=$JobResult -replace ('Never started','0') -replace ('Falha','1') -replace ('Alerta','2') -replace ('Sucesso','3')
+    $JobResult=$JobResult -replace ('Never started','0') `
+						  -replace ('Falha','1') `
+						  -replace ('Alerta','2') `
+						  -replace ('Sucesso','3')
     $List = New-Object -TypeName System.Collections.ArrayList
     for($i=0; $i -lt $count; $i++){
         $Obj = [PSCustomObject]@{
