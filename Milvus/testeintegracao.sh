@@ -1,8 +1,8 @@
 url="https://apiintegracao.milvus.com.br/api/chamado/criar"
-token="P1npPSy48aDWzRICRCRkDAfOLIhbKY3TcJ9eRJKXAALJKOFQye9LXKG9epqxxknzbPg9BojAo9VWJSkRqucEVPoR9GcYm3GZwBVhv"
+token="TOKEN AQUI"
 email="teste@teste.com.br"
 contato="ZABBIX"
-subject="ERRO TESTE #CLIENTE TESTE |928JWL|#"
+subject="ERRO TESTE #CLIENTE TESTE |CODIGO CLIENTE AQUI|#"
 message="TESTE ZABBIX"
 
 
